@@ -2,7 +2,7 @@
 	const messages = ref([
 		{
 			role: 'AI',
-			message: 'Hello! How can I help you?'
+			message: 'Im Moodylass A.I. would you like some tea?'
 		}
 	]);
 	const loading = ref(false);
@@ -51,25 +51,25 @@
 </script>
 
 <template>
-	<div class="max-w-xl mx-auto text-black">
+	<div class="max-w-xl mx-auto text-rose-950">
 		<a
-			href="https://vercel.com/templates/next.js/blob-sveltekit"
-			class="flex justify-center px-10 py-2 mx-auto space-x-1 text-sm font-medium text-center text-gray-600 transition-all rounded-full shadow-sm group bg-white/30 ring-1 ring-gray-900/5 hover:shadow-lg active:shadow-sm"
+			href="https://moodylass.com"
+			class="flex justify-center px-10 py-2 mx-auto space-x-1 text-sm font-medium text-center text-rose-900 transition-all rounded-full shadow-sm group bg-white/30 ring-1 ring-gray-900/5 hover:shadow-lg active:shadow-sm"
 		>
-			Deploy your own to Vercel
+			MoodyLass.com
 		</a>
-		<h1 class="my-8 text-5xl font-bold text-center text-black">AI Chatbot</h1>
+		<h1 class="my-8 text-5xl font-bold text-center text-rose-950">Teatime MoodyLass A.i.</h1>
 		<div class="max-w-xl mx-auto">
 			<div class="bg-white rounded-md shadow h-[60vh] flex flex-col justify-between">
 				<div class="h-full overflow-auto chat-messages">
 					<div v-for="(message, i) in messages" :key="i" class="flex flex-col p-4">
 						<div v-if="message.role === 'AI'" class="pr-8 mr-auto">
-							<div class="p-2 mt-1 text-sm text-gray-700 bg-gray-200 rounded-lg text-smp-2">
+							<div class="p-2 mt-1 text-sm text-rose-900 bg-gray-200 rounded-lg text-smp-2">
 								{{ message.message }}
 							</div>
 						</div>
 						<div v-else class="pl-8 ml-auto">
-							<div class="p-2 mt-1 text-sm text-white bg-blue-400 rounded-lg">
+							<div class="p-2 mt-1 text-sm text-white bg-rose-900 rounded-lg">
 								{{ message.message }}
 							</div>
 						</div>
@@ -125,7 +125,7 @@
 					href="https://openai.com/blog/gpt-3-apps"
 					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
 				>
-					<p>gpt-3</p>
+					<p>moodylass.xyz</p>
 				</a>
 				<span>and</span>
 				<a
@@ -133,7 +133,7 @@
 					class="flex items-center font-medium underline transition-colors underline-offset-4 hover:text-black/70"
 				>
 					<img src="/nuxt.svg" class="h-6 mx-2" />
-					<p>Nuxt</p>
+					<p>TEA</p>
 				</a>
 				.
 			</div>
@@ -142,11 +142,11 @@
 					<img src="/vercel.svg" alt="Vercel Logo" class="h-4 my-2 text-white" />
 				</a>
 				<a
-					href="https://github.com/StephDietz/nuxt-ai-chat"
+					href="https://moodylass.com"
 					class="flex items-center font-medium underline transition-colors underline-offset-4 hover:text-black/70"
 				>
 					<img src="/github.svg" alt="GitHub Logo" class="h-4" />
-					<p class="ml-1">Source</p>
+					<p class="ml-1">A.I.</p>
 				</a>
 			</div>
 		</div>
