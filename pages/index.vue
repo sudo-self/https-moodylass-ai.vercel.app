@@ -2,7 +2,7 @@
 	const messages = ref([
 		{
 			role: 'AI',
-			message: 'Im Moodylass A.I. would you like some tea?'
+			message: 'Hi! i am MoodyLass, would you like some tea?'
 		}
 	]);
 	const loading = ref(false);
@@ -41,7 +41,7 @@
 		} else {
 			messages.value.push({
 				role: 'AI',
-				message: 'Sorry, an error occurred.'
+				message: 'but really, you ought to try some tea!'
 			});
 		}
 
@@ -51,14 +51,14 @@
 </script>
 
 <template>
-	<div class="max-w-xl mx-auto text-rose-950">
+	<div class="max-w-xl mx-auto text-rose-900">
 		<a
 			href="https://moodylass.com"
 			class="flex justify-center px-10 py-2 mx-auto space-x-1 text-sm font-medium text-center text-rose-900 transition-all rounded-full shadow-sm group bg-white/30 ring-1 ring-gray-900/5 hover:shadow-lg active:shadow-sm"
 		>
 			MoodyLass.com
 		</a>
-		<h1 class="my-8 text-5xl font-bold text-center text-rose-950">Teatime MoodyLass A.i.</h1>
+		<h1 class="my-8 text-5xl font-bold text-center text-rose-900">MoodyLass A.i.</h1>
 		<div class="max-w-xl mx-auto">
 			<div class="bg-white rounded-md shadow h-[60vh] flex flex-col justify-between">
 				<div class="h-full overflow-auto chat-messages">
@@ -84,7 +84,7 @@
 							v-model="message"
 							type="text"
 							placeholder="Tea with MoodyLass..."
-							class="w-full p-1 text-sm text-black bg-transparent bg-gray-100 border rounded-md shadow border-white/40 grow"
+							class="w-full p-1 text-sm text-rose-900 bg-transparent bg-gray-100 border rounded-md shadow border-rose-900 grow"
 						/>
 						<button
 							:disabled="loading"
@@ -120,39 +120,25 @@
 		</div>
 		<div class="flex flex-col justify-center w-full my-4">
 			<div class="flex items-center justify-center my-2">
-				<span>Built with</span>
-				<a
-					href="https://openai.com/blog/gpt-3-apps"
-					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
-				>
-					<p>moodylass.xyz</p>
-				</a>
-				<span>and</span>
-				<a
-					href="https://nuxt.com/docs"
-					class="flex items-center font-medium underline transition-colors underline-offset-4 hover:text-black/70"
-				>
-					<img src="/nuxt.svg" class="h-6 mx-2" />
-					<p>TEA</p>
-				</a>
-				.
-			</div>
-			<div class="flex flex-col items-center justify-center">
-				<a href="https://vercel.com">
-					<img src="/vercel.svg" alt="Vercel Logo" class="h-4 my-2 text-white" />
-				</a>
+				<span>👽 tea brewed by</span>
 				<a
 					href="https://moodylass.com"
-					class="flex items-center font-medium underline transition-colors underline-offset-4 hover:text-black/70"
+					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
 				>
-					<img src="/github.svg" alt="GitHub Logo" class="h-4" />
-					<p class="ml-1">A.I.</p>
+					<p>Moodylass.com</p>
+				</a>
+				<span></span>
+				<a
+					href="https://www.buymeacoffee.com/moodylass"
+					class="flex items-center font-medium underline transition-colors hover:text-black/70"
+				>
+					<img src="/nuxt.svg" class="h-6 mx-2" />
+					<p>𝓋𝒾𝓈𝒾𝓉𝑜𝓇 𝓈𝓅𝑜𝓉 𝓂𝑒 𝒶 𝓉𝑒𝒶?</p>
 				</a>
 			</div>
 		</div>
 	</div>
 </template>
-
 <style>
 	.loader {
 		width: 12px;
