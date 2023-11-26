@@ -83,13 +83,13 @@
 						<input
 							v-model="message"
 							type="text"
-							placeholder="Type here..."
+							placeholder="Tea with MoodyLass..."
 							class="w-full p-1 text-sm text-black bg-transparent bg-gray-100 border rounded-md shadow border-white/40 grow"
 						/>
 						<button
 							:disabled="loading"
 							type="submit"
-							class="flex items-center justify-center flex-none w-10 h-10 ml-2 bg-green-500 rounded-full"
+							class="flex items-center justify-center flex-none w-10 h-10 ml-2 bg-rose-900 rounded-full"
 						>
 							<svg
 								width="24"
