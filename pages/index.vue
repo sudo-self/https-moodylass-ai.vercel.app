@@ -120,14 +120,14 @@
 		</div>
 		<div class="flex flex-col justify-center w-full my-4">
 			<div class="flex items-center justify-center my-2">
-				<span>👽 tea brewed by</span>
+				<span></span>
 				<a
 					href="https://moodylass.com"
 					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
 				>
-					<p>Moodylass.com</p>
+				<a href="https://moodylass.com">☎️&nbsp;Moodylass.com</a>
 				</a>
-				<span></span>
+			<br><br>
 				<a
 					href="https://www.buymeacoffee.com/moodylass"
 					class="flex items-center font-medium underline transition-colors hover:text-black/70"
